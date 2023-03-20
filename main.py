@@ -2,7 +2,8 @@ from transformers import pipeline
 import streamlit as st
 
 st.title('Web-приложение для создания аннотаций к тексту')
-st.markdown('Приложение использует предварительно обученную модель mBART для обобщения текста на русском языке.')
+st.markdown('Приложение использует предварительно обученную модель "IlyaGusev/mbart_ru_sum_gazeta"(mBART), полученную '
+            'с Hugging Face (https://huggingface.co/) и используемую для обобщения текста на русском языке.')
 
 text = st.text_area('Исходный текст:')
 
