@@ -12,7 +12,7 @@ def run_model(input_text):
     input_text = str(input_text)
     model = pipeline("summarization", "IlyaGusev/rut5_base_sum_gazeta")
     output = model(input_text)
-    st.write('Аннтоация')
+    st.write('Аннотация')
     st.success(output[0]['summary_text'])
 
 
